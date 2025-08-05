@@ -31,7 +31,22 @@ This project is a LangGraph-based LLM application that uses AgenticAI's capabili
 
     ```bash
       pip install -r requirements.txt
-4.Running the Application
+4. Running the Application
     ```bash
       streamlit run app.py
+
+Structure of file
+ ```graphql
+    .
+├── src/
+│   ├── app.py                      # Streamlit UI
+│   ├── langgraphagenticai/
+│   │   ├── user_controls.py        # Sidebar controls (API key, prompt, model)
+│   │   ├── groq_llm.py             # Handles LLM creation with Groq
+│   │   ├── graph_executor.py       # LangGraph setup and execution
+│   │   ├── display_result.py       # Output rendering logic
+│   │   └── graph_nodes/            # (Optional) Custom nodes/functions
+├── requirements.txt
+└── README.md
+
 
